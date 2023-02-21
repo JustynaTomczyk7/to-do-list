@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+
+    <link rel="icon" href="<%= require('/src/img/favicon.svg') %>" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="bg-list">
+            <p class="time" id="time"></p>
+            <h1>to do list</h1>
+
+            <div class="add-task">
+                <input class="input-task" id="new-task" type="text" placeholder="dodaj nowe zadanie">
+                <div class="img-add">
+                    <img class="img" id="add" src="<%= require('./img/add.png') %>" alt="add">
+                </div>
+            </div>
+            <p class="alert display-none" id="alert">Wpisz zadanie, które chcesz dodać do listy!</p>
+
+            <div class="list">
+                <ul id="todo-list">
+                    <li class="task">
+                        <span class="unchecked"><img class="approved display-none" src="<%= require('./img/approved.png') %>" alt="approved"></span>
+                        <input class="input-list-task" type="text" readonly value="zrobić trening">
+                        <img class="bin" src="<%= require('./img/bin.png') %>" alt="bin">
+                    </li>
+
+                    <li class="task">
+                        <span class="unchecked"><img class="approved display-none" src="<%= require('./img/approved.png') %>" alt="approved"></span>
+                        <input class="input-list-task" type="text" readonly value="podlać kwiatki">
+                        <img class="bin" src="<%= require('./img/bin.png') %>" alt="bin">
+                    </li>
+
+                    <li class="task">
+                        <span class="unchecked"><img class="approved display-none" src="<%= require('./img/approved.png') %>" alt="approved"></span>
+                        <input class="input-list-task" type="text" readonly value="zadzwonić do lekarza">
+                        <img class="bin" src="<%= require('./img/bin.png') %>" alt="bin">
+                    </li>
+
+                    <li class="task">
+                        <span class="unchecked"><img class="approved" src="<%= require('./img/approved.png') %>" alt="approved"></span>
+                        <input class="input-list-task text-decoration" type="text" readonly value="odpisać na maile">
+                        <img class="bin" src="<%= require('./img/bin.png') %>" alt="bin">
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

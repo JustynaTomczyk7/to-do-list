@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+:root,
+input {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(./img/bg-body.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 500px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.bg-list {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 7px -1px rgba(163, 163, 163, 1);
+}
+
+h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.alert {
+    margin: 15px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #e8507e;
+    text-shadow: 0px 0px 5px rgba(234, 127, 159, 1);
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.input-task {
+    width: 85%;
+    height: 40px;
+    box-shadow: 0px 0px 7px -1px rgba(163, 163, 163, 1);
+    border: none;
+    padding: 0 10px;
+}
+
+.img-add {
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+
+.img {
+    width: 35px;
+    height: 35px;
+}
+
+.list {
+    margin: 30px auto;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    box-shadow: 0px 0px 7px -1px rgba(163, 163, 163, 1);
+}
+
+.unchecked {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000;
+    margin: 10px;
+    position: relative;
+}
+
+.approved {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: -9px;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.text-decoration {
+    text-decoration: line-through;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.input-list-task {
+    width: 65%;
+    height: 26px;
+    border: none;
+}
+
+.bin {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.img:hover,
+.unchecked:hover,
+.bin:hover {
+    cursor: pointer;
+}
+
+@media (min-height: 750px) {
+    .container {
+        padding: 60px 20px;
+    }
+}
